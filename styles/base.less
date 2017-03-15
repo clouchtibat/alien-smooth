@@ -12,18 +12,6 @@
     transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-atom-text-editor::after, :host::after {
-  content: "";
-  background: red;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
 atom-text-editor, :host {
     background: #0e0e0e;
     background:url(https://cloud.githubusercontent.com/assets/9166224/12528332/173d2b48-c158-11e5-99a9-9946b0168a99.jpg);
@@ -98,8 +86,6 @@ atom-text-editor .search-results .marker.current-result .region,
 //esta linea es un comentario
 .comment {
   color: @light-gray;
-  //background-color: @dark-pink;
-  //background-color: rgba(122,200,34,.2);
   font-size:12px;
   padding-left:2px;
 }
@@ -261,8 +247,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 .constant.other.rgb-value.css{
   color: @yellow;
-  background-color: rgb(36, 36, 36);
-  border:1px solid rgb(75, 75, 75);
+  border:1px solid rgba(255, 236, 152, .2);
   padding:2px;
 }
 
